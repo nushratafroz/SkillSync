@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SkillSync Find JOb</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+
+    <!-- React and ReactDOM -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+</head>
+<body>
+    <!--find-hero Section Starts-->
+    <section class="find-hero">
+    <!-- Navigation Inside Hero -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent-black fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="SkillSync Logo" class="img-fluid" style="height: 70px; width: 70px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="findjobs.html">Find Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="postjob.html">Post Job</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="myprofile.html">Employee-Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="employer.html">Employer-Profile</a>
+                    </li>
+                </ul>
+    
+                <div class="d-flex align-items-center gap-3">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Find Jobs" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                    <a href="registration.html" class="btn btn-primary">Register</a>
+                    <a href="login.html" class="btn btn-outline-light">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Hero Content-->
+    <div class="hero-content">
+        <div class="container">
+ 
+        </div>
+    </div>
+    </section>
+    <!-- Hero Section Ends -->
+
+    <!-- Filter-job Section Starts -->
+    <section class="filter-job">
+        <div class="container">
+            <div class="row"z>
+                <div class="col-md-3 filter">
+                    <h2><i class="fa-solid fa-filter"></i>Filter Jobs</h2>
+                    
+                    <div class="job-cat">
+                        <h2>Job Category</h2>
+                        <button class="btn btn-three" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            All Category<i class="fa-solid fa-caret-down"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Writinng & Content Creation</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Graphics Design & Digital Media</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Social Media Management</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Tech & Development</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Translation & Transcription</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Virtual Assistant & Admin Support</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="job-type">
+                        <h2>Job Type</h2>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="fulltime">
+                                <label class="form-check-label" for="fulltime">Full-Time</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="parttime">
+                                <label class="form-check-label" for="parttime">Part-Time</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="remote">
+                                <label class="form-check-label" for="remote">Remote</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="freelance">
+                                <label class="form-check-label" for="freelance">Freelance</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="job-loc">
+                        <h2>Job Location</h2>
+                        <button class="btn btn-three" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Anywhere <i class="fa-solid fa-caret-down"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Khulna</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Dhaka</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Chittagong</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Barishal</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Sylhet</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Rangpur</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="job-exp">
+                        <h2>Experience</h2>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="1-2">
+                                <label class="form-check-label" for="fulltime">1-2</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="2-3">
+                                <label class="form-check-label" for="parttime">2-3</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="3-6">
+                                <label class="form-check-label" for="remote">3-6</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="6-more">
+                                <label class="form-check-label" for="freelance">6-more</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="post-within">
+                        <h2>Posted Within</h2>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="any">
+                                <label class="form-check-label" for="fulltime">Any</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="today">
+                                <label class="form-check-label" for="parttime">Today</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="last_2">
+                                <label class="form-check-label" for="remote">Last-2 Days</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="last_3">
+                                <label class="form-check-label" for="freelance">Last-3 Days</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="last_5">
+                                <label class="form-check-label" for="freelance">Last-5 Days</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="last_week">
+                                <label class="form-check-label" for="freelance">Last Week</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="Salary">
+                        <h2>Salary Range</h2>
+                            <div class="slider-container">
+                                <label for="priceRange">Price :</label>
+                                <span id="minPrice">0</span> to <span id="maxPrice">10000</span>
+                                <input type="range" id="priceRange" min="0" max="10000" value="0" step="1">
+                            </div>
+                    </div>
+
+                </div>
+                <div class="col-md-9 job-post_sort">
+                    <div class="sort-by">
+                        <h4>Sort BY</h4>
+                        <button class="btn btn-four" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            None <i class="fa-solid fa-caret-down"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Employer Rating</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Relevance</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Location (Nearest First)</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Posting Date (Newest First)</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Salary (Highest to Lowest)</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Experience Level (Beginner-Friendly First)</a></li>
+                        </ul>
+                    </div>
+                    <div class="job-cards">
+                        <div class="job-post">
+                            <img src="img/com_logo1.jpg" alt="Company Logo" class="logo">
+                            <div class="details">
+                                <h2>Digital Marketer</h2>
+                                <p>Creative Agency • 📍 Athens, Greece</p>
+                            </div>
+                            <span class="salary">$500 - $1000</span>
+                            <button class="job-type">Full Time</button>
+                            <span class="time">8 hours ago</span>
+                            <a href="#" class="btn btn-primary">Apply Now</a>
+                        </div>
+
+                        <div class="job-post">
+                            <img src="img/com_logo2.jpg" alt="Company Logo" class="logo">
+                            <div class="details">
+                                <h2>Digital Marketer</h2>
+                                <p>Creative Agency • 📍 Athens, Greece</p>
+                            </div>
+                            <span class="salary">$3500 - $4000</span>
+                            <button class="job-type">Full Time</button>
+                            <span class="time">7 hours ago</span>
+                            <a href="#" class="btn btn-primary">Apply Now</a>
+                        </div>
+
+                        <div class="job-post">
+                            <img src="img/com_logo3.jpg" alt="Company Logo" class="logo">
+                            <div class="details">
+                                <h2>Digital Marketer</h2>
+                                <p>Creative Agency • 📍 Athens, Greece</p>
+                            </div>
+                            <span class="salary">$300 - $700</span>
+                            <button class="job-type">Full Time</button>
+                            <span class="time">22 hours ago</span>
+                            <a href="#" class="btn btn-primary">Apply Now</a>
+                        </div>
+
+                        <div class="job-post">
+                            <img src="img/com_logo4.jpg" alt="Company Logo" class="logo">
+                            <div class="details">
+                                <h2>Digital Marketer</h2>
+                                <p>Creative Agency • 📍 Athens, Greece</p>
+                            </div>
+                            <span class="salary">$3100 - $8000</span>
+                            <button class="job-type">Full Time</button>
+                            <span class="time">1 hours ago</span>
+                            <a href="#" class="btn btn-primary">Apply Now</a>
+                        </div>
+
+                        <div class="job-post">
+                            <img src="img/com_logo5.jpg" alt="Company Logo" class="logo">
+                            <div class="details">
+                                <h2>Digital Marketer</h2>
+                                <p>Creative Agency • 📍 Athens, Greece</p>
+                            </div>
+                            <span class="salary">$500 - $2000</span>
+                            <button class="job-type">Full Time</button>
+                            <span class="time">8 hours ago</span>
+                            <a href="#" class="btn btn-primary">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Filter-job Section Ends -->
+    <div class="col-md-8 offset-md-2 pagination_1">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 footer-one">
+                    <p style="color: #c8c8c8;"> &copy; 2025 COPYRIGHT #nushratr1379@gmail.com</p>
+                </div>
+                <div class="col-md-6 footer-two">
+                    <p style="color: #c8c8c8;">DESIGNED BY Nushrat Afroz <span style="color: #ed145b">.</span>CO</p>
+                </div>
+            </div>
+    
+        </div>
+        <!-- /.container -->
+    </footer>
+            <!-- Correct Script Order -->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="js/scrolling-nav.js"></script>
+            <script src="js/main.js"></script>
+
+</body>
+</html>

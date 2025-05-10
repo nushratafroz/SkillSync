@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SkillSync-Employee</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+
+    <!-- React and ReactDOM -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+</head>
+
+<body>
+
+    <section class="employee-hero">
+        <!-- Navigation Inside Hero -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent-black fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="SkillSync Logo" class="img-fluid" style="height: 70px; width: 70px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="findjobs.html">Find Jobs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="postjob.html">Post Job</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="myprofile.html">Employee-Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="employer.html">Employer-Profile</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Find Jobs" aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit">Search</button>
+                        </form>
+                        <a href="registration.html" class="btn btn-primary">Register</a>
+                        <a href="login.html" class="btn btn-outline-light">Login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 employee-title">
+                        <h1>Welcome Back, <span style="color:#8b92dd;">$oza</span></h1>
+                        <h3 style="color:#ffffff;">Your SkillSync Dashboard</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employer Profile Section -->
+    <section class="employer-profile-section" id="employer-profile">
+        <div class="container">
+            <div class="text-center employer-title">
+                <h2>Employer Dashboard</h2>
+                <span></span>
+            </div>
+
+            <!-- Employer Basic Info -->
+            <div class="employer-info-card">
+                <img src="img/employer.jpg" alt="Employer Profile Picture" class="employer-profile-img">
+                <div class="employer-details">
+                    <h3>Full Name: John Doe</h3>
+                    <h4>Email: johndoe@email.com</h4>
+                    <h4>Company: InnovateTech</h4>
+                    <h4>Website: www.innovatetech.com</h4>
+                    <p>Description: InnovateTech is a leading innovator in tech-driven solutions, empowering businesses
+                        worldwide.</p>
+                </div>
+            </div>
+            <!-- Ongoing Jobs Section -->
+            <div class="ongoing-jobs-section">
+                <h3>Ongoing Jobs</h3>
+            
+                <div class="ongoing-job-card">
+                    <h4>🌟 Fullstack Developer - Remote</h4>
+                    <h4><strong>Employee:</strong> Sarah Williams</h4>
+                    <h4><strong>Skills:</strong> React, Node.js, AWS</h4>
+                    <h4><strong>Duration:</strong> 6 months | <strong>Salary:</strong> $5000/month</h4>
+            
+                    <div class="ongoing-job-actions">
+                        <button class="btn-complete" onclick="handleMarkComplete()">Mark as Completed</button>
+            
+                        <div class="rating">
+                            <label for="rating">Give Rating:</label>
+                            <select id="rating" onchange="handleRating(this)">
+                                <option value="">Rate Employee</option>
+                                <option value="1">⭐</option>
+                                <option value="2">⭐⭐</option>
+                                <option value="3">⭐⭐⭐</option>
+                                <option value="4">⭐⭐⭐⭐</option>
+                                <option value="5">⭐⭐⭐⭐⭐</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+
+            <!-- Posted Jobs -->
+            <div class="posted-jobs-section">
+                <h3>Posted Jobs</h3>
+                <div class="job-card-employer">
+                    <h4>🌟 Frontend Developer - Remote</h4>
+                    <p>Experience: 2+ years | Location: Remote | Salary: $4000/month</p>
+                    <button class="btn-cancel-job" onclick="handleCancelJob()">Cancel Job</button>
+                </div>
+                <div class="job-card-employer">
+                    <h4>🌟 Backend Engineer - Onsite</h4>
+                    <p>Experience: 3+ years | Location: New York, USA | Salary: $6000/month</p>
+                    <button class="btn-cancel-job" onclick="handleCancelJob()">Cancel Job</button>
+                </div>
+            </div>
+
+            <!-- Applications Received -->
+            <div class="applications-section">
+                <h3>Applications Received</h3>
+                <div class="application-card">
+                    <h4>Applicant: Jane Smith</h4>
+                    <p>Skills: React, Node.js, MongoDB</p>
+                    <button class="btn-approve" onclick="handleApprove()">Approve</button>
+                    <button class="btn-select" onclick="handleReject()">Reject</button>
+                </div>
+                <div class="application-card">
+                    <h4>Applicant: Alex Johnson</h4>
+                    <p>Skills: Python, Django, AWS</p>
+                    <button class="btn-approve" onclick="handleApprove()">Approve</button>
+                    <button class="btn-select" onclick="handleReject()">Reject</button>
+                </div>
+            </div>
+        </div>
+        <div class="employee-actions mt-5">
+            <button class="btn-logout" id="logoutBtn" onclick="handleLogout()">Logout</button>
+            <button class="btn-delete" id="deleteAccountBtn" onclick="handleDelete()">Delete Account</button>
+        </div>
+
+        <!-- React Root for Alert -->
+        <div id="alert-root"></div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 footer-one">
+                    <p style="color: #c8c8c8;"> &copy; 2025 COPYRIGHT #nushratr1379@gmail.com</p>
+                </div>
+                <div class="col-md-6 footer-two">
+                    <p style="color: #c8c8c8;">DESIGNED BY Nushrat Afroz <span style="color: #ed145b">.</span>CO</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+
+    <!-- jQuery + Bootstrap Bundle -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- React + JS for Employer Alerts -->
+    <script type="text/javascript">
+        const { useState } = React;
+
+        function EmployerAlert() {
+            const [message, setMessage] = useState(null);
+
+            // Expose globally
+            window.triggerAlert = (msg) => {
+                setMessage(msg);
+                setTimeout(() => setMessage(null), 3000);
+            };
+
+            return (
+                message && (
+                    React.createElement('div', {
+                        style: {
+                            position: "fixed",
+                            top: "20px",
+                            right: "20px",
+                            background: "#4b6cb3",
+                            color: "#fff",
+                            padding: "15px 20px",
+                            borderRadius: "8px",
+                            boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
+                            zIndex: 9999,
+                        }
+                    }, message)
+                )
+            );
+        }
+
+        ReactDOM.render(
+            React.createElement(EmployerAlert),
+            document.getElementById('alert-root')
+        );
+
+        // Handlers
+        function handleCancelJob() {
+            triggerAlert("Job canceled successfully!");
+        }
+
+        function handleApprove() {
+            triggerAlert("Application approved!");
+        }
+
+        function handleReject() {
+            triggerAlert("Candidate Rejected!");
+        }
+        function handleLogout() {
+            triggerAlert("You Logged Out");
+        }
+
+        function handleDelete() {
+            triggerAlert("Your Account has been deleted");
+        }
+        function handleMarkComplete() {
+            triggerAlert("Job marked as completed! Please provide a rating.");
+        }
+
+        function handleRating(selectElement) {
+            const rating = selectElement.value;
+            if (rating) {
+                triggerAlert(`Thank you for giving ${rating} star(s)!`);
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

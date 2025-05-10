@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SkillSync</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Hero Section Starts -->
+  <section class="hero">
+    <!-- Navigation Inside Hero -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent-black fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.png" alt="SkillSync Logo" class="img-fluid" style="height: 70px; width: 70px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="findjobs.html">Find Jobs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="postjob.html">Post Job</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="myprofile.html">Employee-Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="employer.html">Employer-Profile</a>
+            </li>
+          </ul>
+  
+          <div class="d-flex align-items-center gap-3">
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Find Jobs" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+            <a href="registration.html" class="btn btn-primary">Register</a>
+            <a href="login.html" class="btn btn-outline-light">Login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 hero-title">
+            <h1 class="text-center mb-4">Find Jobs That Match Your Skills, Locally & Easily.</h1>
+            <form class="d-flex flex-column flex-lg-row gap-3">
+              <input type="search" class="form-control" placeholder="Job Title or Keyword" aria-label="Search">
+  
+              <div class="btn-group flex-grow-0">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Location
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Dhaka</a></li>
+                  <li><a class="dropdown-item" href="#">Rajshahi</a></li>
+                  <li><a class="dropdown-item" href="#">Chittagong</a></li>
+                  <li><a class="dropdown-item" href="#">Khulna</a></li>
+                  <li><a class="dropdown-item" href="#">Barishal</a></li>
+                  <li><a class="dropdown-item" href="#">Sylhet</a></li>
+                </ul>
+              </div>
+  
+              <button type="submit" class="btn btn-primary">Find Job</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero Section Ends -->
+
+  <!--Job Categories Section Starts-->
+  <section class="job-catagories">
+    <div class="container">
+      <div class="row">
+        <!-- Title Section -->
+        <div class="col-md-12 job-title text-center mb-5">
+          <h2>Browse Job Categories</h2>
+          <span class="title-divider"></span>
+        </div>
+      </div>
+  
+      <!-- First Row of Categories -->
+      <div class="row mb-4">
+        <div class="col-md-4 job-image mb-4">
+          <img src="img/content.png" class="img-fluid">
+          <h1>Writing & Content Creation</h1>
+        </div>
+  
+        <div class="col-md-4 job-image mb-4">
+          <img src="img/graphics.png" class="img-fluid">
+          <h1>Graphic Design & Digital Media</h1>
+        </div>
+  
+        <div class="col-md-4 job-image mb-4">
+          <img src="img/socialmedia.png" class="img-fluid">
+          <h1>Social Media Management</h1>
+        </div>
+      </div>
+  
+      <!-- Second Row of Categories -->
+      <div class="row mb-5">
+        <div class="col-md-4 job-image mb-4">
+          <img src="img/techanddev.png" class="img-fluid">
+          <h1>Tech & Development</h1>
+        </div>
+  
+        <div class="col-md-4 job-image mb-4">
+          <img src="img/translator.png" class="img-fluid">
+          <h1>Translation & Transcription</h1>
+        </div>
+  
+        <div class="col-md-4 job-image mb-4">
+          <img src="img/virtual.png" class="img-fluid">
+          <h1>Virtual Assistance & Admin Support</h1>
+        </div>
+      </div>
+  
+      <!-- Browse Button Row -->
+      <div class="row">
+        <div class="col-md-8 offset-md-2 text-center">
+          <a href="findjobs.html" class="btn btn-one">Browse All Categories</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Job Categories Section Ends-->
+
+  <!--Upload Cv Section Start-->
+  <section class="upload-cv">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="upload-title">
+            <h3>Get Discovered by Top Employers </h3>
+            <h1>Join 50,000+ freelancers and students already hired remotely</h1>
+            <a href="#" type="button" class="btn btn-two">Upload Your CV</a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--Upload CV Section Ends -->
+
+<!-- Recent Jobs Section Starts-->
+  <section class="recent-jobs py-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-8 offset-md-2 text-center">
+          <span>Recent Jobs</span>
+          <h2>Featured Jobs</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div id="jobsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Job 1 -->
+              <div class="carousel-item active">
+                <div class="row justify-content-center">
+                  <div class="col-md-8">
+                    <div class="card job-card">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                          <h3 class="card-title">Digital Marketer</h3>
+                          <span class="badge bg-primary">Full Time</span>
+                        </div>
+                        <div class="job-meta mb-3">
+                          <span class="text-muted me-3">
+                            <i class="fa fa-building"></i> Creative Agency
+                          </span>
+                          <span class="text-muted me-3">
+                            <i class="fa fa-map-marker"></i> Athens, Greece
+                          </span>
+                          <span class="text-success">
+                            <i class="fa fa-money"></i> $3500 - $4000
+                          </span>
+                        </div>
+                        <p class="card-text">Seeking experienced digital marketer with expertise in SEO and social media
+                          management.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <small class="text-muted">Posted 7 hours ago</small>
+                          <a href="#" class="btn btn-primary">Apply Now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Job 2 (Duplicate and modify this block for more jobs) -->
+              <!-- Job 2 -->
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-md-8">
+                    <div class="card job-card">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                          <h3 class="card-title">Virtual Assistant</h3>
+                          <span class="badge bg-primary">Part Time</span>
+                        </div>
+                        <div class="job-meta mb-3">
+                          <span class="text-muted me-3">
+                            <i class="fa fa-building"></i> Remote Solutions Co.
+                          </span>
+                          <span class="text-muted me-3">
+                            <i class="fa fa-map-marker"></i> Remote
+                          </span>
+                          <span class="text-success">
+                            <i class="fa fa-money"></i>$2000 - $2500
+                          </span>
+                        </div>
+                        <p class="card-text">Looking for organized virtual assistant with experience in email management and calendar
+                          scheduling.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <small class="text-muted">Posted 2 hours ago</small>
+                          <a href="#" class="btn btn-primary">Apply Now</a>
+                        </div>
+                      </div> <!-- Close card-body -->
+                    </div> <!-- Close card -->
+                  </div> <!-- Close col-md-8 -->
+                </div> <!-- Close row -->
+              </div> <!-- Close carousel-item -->
+
+              <!-- Job 3 -->
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-md-8">
+                    <div class="card job-card">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                          <h3 class="card-title">Social Media Manager</h3>
+                          <span class="badge bg-primary">Full Time</span>
+                        </div>
+                        <div class="job-meta mb-3">
+                          <span class="text-muted me-3">
+                            <i class="fa fa-building"></i> Creative Studio
+                          </span>
+                          <span class="text-muted me-3">
+                            <i class="fa fa-map-marker"></i> Newyork, USA
+                          </span>
+                          <span class="text-success">
+                            <i class="fa fa-money"></i> $3500 - $4000
+                          </span>
+                        </div>
+                        <p class="card-text">Seeking creative social media manager to lead campaigns across Instagram, TikTok, and LinkedIn.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <small class="text-muted">Posted 5 hours ago</small>
+                          <a href="#" class="btn btn-primary">Apply Now</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#jobsCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#jobsCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Recent Jobs Section Ends-->
+
+  <!--approach section starts-->
+  <section id="approach" class="approach">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 offset-md-4 about-title">
+          <h3>Get hired in 4 simple steps</h3>
+          <h4>Discover opportunities that match your skills and land your dream job effortlessly.</h4>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="container app">
+      <div class="row approach-content">
+        <div class="col-md-2 app-img ">
+          <img src="img/step1.png" class="img-fluid">
+  
+          <div class="step">
+            <h1 style="padding: 0px;">1</h1>
+            <h4 style="color: #ffffff; line-height: 0px; padding: 0px;">Step</h4>
+          </div>
+        </div>
+        <div class="col-md-10 app-content">
+          <h1 style="font-size: 22px; color: #424242;">Step 1: Create Profile</h1>
+          <p>Register in minutes with your basic information and professional details.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container  app">
+      <div class="row approach-content">
+  
+        <div class="col-md-10 app-content">
+          <h1 style="font-size: 22px; color: #424242; text-align: right;">Step 2: Search Jobs</h1>
+          <p style="text-align: right;">Use smart filters to find positions matching your skills and preferences.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+            of type and scrambled.</p>
+        </div>
+        <div class="col-md-2 app-img ">
+          <img src="img/step2.png" class="img-fluid">
+  
+          <div class="step">
+            <h1 style="padding: 0px;">2</h1>
+            <h4 style="color: #ffffff; line-height: 0px; padding: 0px;">Step</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container app">
+      <div class="row approach-content">
+        <div class="col-md-2 app-img ">
+          <img src="img/step3.png" class="img-fluid">
+  
+          <div class="step">
+            <h1 style="padding: 0px;">3</h1>
+            <h4 style="color: #ffffff; line-height: 0px; padding: 0px;">Step</h4>
+          </div>
+        </div>
+        <div class="col-md-10 app-content">
+          <h1 style="font-size: 22px; color: #424242;">Step 3: Apply Easily</h1>
+          <p> Submit applications with pre-filled data and track your progress.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container  app">
+      <div class="row approach-content">
+  
+        <div class="col-md-10 app-content">
+          <h1 style="font-size: 22px; color: #424242; text-align: right;">Step 4: Get Hired</h1>
+          <p style="text-align: right;">Connect directly with employers and finalize your employment. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+            of type and scrambled.</p>
+        </div>
+        <div class="col-md-2 app-img ">
+          <img src="img/step4.png" class="img-fluid">
+  
+          <div class="step">
+            <h1 style="padding: 0px;">4</h1>
+            <h4 style="color: #ffffff; line-height: 0px; padding: 0px;">Step</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!--approach section ends-->
+
+  <!--post job section start-->
+  <section class="post-job">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 post-title">
+          <h1>Hire Top Talent in Minutes</h1>
+          <span></span>
+          <h4>Post your job opportunity for free and connect with skilled professionals ready to contribute.
+             Our platform makes it easy to reach qualified candidates—simply fill in your job details, set 
+             preferences, and publish your listing. Whether you're hiring locally or remotely, get precise 
+             candidate matches, manage applications effortlessly, and track progress through your dedicated
+              dashboard. Start hiring today and build your dream team faster than ever.</h4>
+          <a href="postjob.html"> <button type="button" class="btn btn-one">Post a Job</button></a>
+  
+  
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--post job section ends-->
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 footer-one">
+          <p style="color: #c8c8c8;"> &copy; 2025 COPYRIGHT #nushratr1379@gmail.com</p>
+        </div>
+        <div class="col-md-6 footer-two">
+          <p style="color: #c8c8c8;">DESIGNED BY Nushrat Afroz <span style="color: #ed145b">.</span>CO</p>
+        </div>
+      </div>
+  
+    </div>
+    <!-- /.container -->
+  </footer>
+
+
+      <!-- Correct Script Order -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

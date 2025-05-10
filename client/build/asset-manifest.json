@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.84414ff3.css",
+    "main.js": "/static/js/main.981e5934.js",
+    "static/media/login.jpg": "/static/media/login.4e1fc4dd075063e23842.jpg",
+    "static/media/contact-bg.jpg": "/static/media/contact-bg.8665d52a4e40db7da3e9.jpg",
+    "static/media/find-hero.jpg": "/static/media/find-hero.da19f59aa30e3a8364fe.jpg",
+    "static/media/slide1.jpg": "/static/media/slide1.88389e9a382675a35bdf.jpg",
+    "static/media/slide3.jpg": "/static/media/slide3.1d9d84159ebca72e445b.jpg",
+    "static/media/job-post.jpg": "/static/media/job-post.39a27bfa1beb5a8d4f48.jpg",
+    "static/media/cv.jpg": "/static/media/cv.b935fb60b2e3e66acea7.jpg",
+    "static/media/slide2.jpg": "/static/media/slide2.82c3b9d86b5cc0204cd9.jpg",
+    "static/media/banner.jpg": "/static/media/banner.d2bebec3151116fd6da7.jpg",
+    "static/media/logo.png": "/static/media/logo.57b5c3e45033f3f0b291.png",
+    "static/media/socialmedia.png": "/static/media/socialmedia.a29bca0a414f1ae22f69.png",
+    "static/media/techanddev.png": "/static/media/techanddev.f75c3ca8bdbc0b0dff58.png",
+    "static/media/translator.png": "/static/media/translator.ab304afc0ee3df3b72f3.png",
+    "static/media/content.png": "/static/media/content.726d630341861ea6f682.png",
+    "static/media/graphics.png": "/static/media/graphics.99f221cfd10769b5d2fa.png",
+    "static/media/virtual.png": "/static/media/virtual.386b57f86775336fa984.png",
+    "index.html": "/index.html",
+    "main.84414ff3.css.map": "/static/css/main.84414ff3.css.map",
+    "main.981e5934.js.map": "/static/js/main.981e5934.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84414ff3.css",
+    "static/js/main.981e5934.js"
+  ]
+}

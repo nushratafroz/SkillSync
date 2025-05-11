@@ -38,7 +38,7 @@ const EmployerPage = () => {
     // Fetch posted jobs for the employer
     useEffect(() => {
         if (employerData.registrationId) {
-            axios.get(`http://localhost:5000/api/employer/${employerData.registrationId}/jobs`)
+            axios.get(process.env.REACT_APP_API_URL+`/api/employer/${employerData.registrationId}/jobs`)
                 .then(response => {
                     setPostedJobs(response.data);
                 })
@@ -52,7 +52,7 @@ const EmployerPage = () => {
     // Fetch applications received for the employer
     useEffect(() => {
         if (employerData.registrationId) {
-            axios.get(`http://localhost:5000/api/employer/${employerData.registrationId}/applications`)
+            axios.get(process.env.REACT_APP_API_URL+`/api/employer/${employerData.registrationId}/applications`)
                 .then(response => {
                     setApplications(response.data);
                     console.log('Applications:', response.data); // Log the applications data
@@ -79,7 +79,7 @@ const EmployerPage = () => {
     }, []);  // This runs on component mount, so ongoing jobs will be displayed
 
     const handleApprove = (applicationId) => {
-        axios.put(`http://localhost:5000/api/approve-application/${applicationId}`)
+        axios.put(process.env.REACT_APP_API_URL+`/api/approve-application/${applicationId}`)
             .then(response => {
                 // Update ongoing jobs state with the new job
                 const approvedApp = applications.find(app => app._id === applicationId);
@@ -106,7 +106,7 @@ const EmployerPage = () => {
     const handleMarkComplete = (ongoingJobId) => {
         if (!window.confirm('Are you sure you want to mark this job as complete?')) return;
     
-        axios.delete(`http://localhost:5000/api/ongoing-jobs/${ongoingJobId}`, {
+        axios.delete(process.env.REACT_APP_API_URL+`/api/ongoing-jobs/${ongoingJobId}`, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem('authToken')}`
             }
@@ -127,7 +127,7 @@ const EmployerPage = () => {
     
 
     const handleReject = (applicationId) => {
-        axios.put(`http://localhost:5000/api/reject-application/${applicationId}`, {
+        axios.put(process.env.REACT_APP_API_URL+`/api/reject-application/${applicationId}`, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem('authToken')}` // Send the auth token
             }
@@ -140,7 +140,7 @@ const EmployerPage = () => {
     };
     // Cancel the job posting
     const handleCancelJob = (jobId) => {
-        axios.delete(`http://localhost:5000/api/jobs/${jobId}`, {
+        axios.delete(process.env.REACT_APP_API_URL+`/api/jobs/${jobId}`, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem('authToken')}` // Send the auth token
             }

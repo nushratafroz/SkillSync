@@ -69,7 +69,7 @@ const EmployeeProfilePage = () => {
     // Handle Withdraw Job
     // Function to handle job withdrawal
     const handleWithdrawJob = (applicationId) => {
-        axios.delete(`http://localhost:5000/api/withdraw-job/${applicationId}`, {
+        axios.delete(process.env.REACT_APP_API_URL+`/api/withdraw-job/${applicationId}`, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem('authToken')}`
             }
@@ -102,7 +102,7 @@ const EmployeeProfilePage = () => {
        const handleMarkComplete = (ongoingJobId) => {
         if (!window.confirm('Are you sure you want to mark this job as complete?')) return;
     
-        axios.delete(`http://localhost:5000/api/ongoing-jobs/${ongoingJobId}`, {
+        axios.delete(process.env.REACT_APP_API_URL+`/api/ongoing-jobs/${ongoingJobId}`, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem('authToken')}`
             }
